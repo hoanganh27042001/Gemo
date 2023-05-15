@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Coffee Ordering System</title>
+  <!-- <link rel="stylesheet" href="styles.css"> -->
+</head>
+<body>
+  <header>
+    <h1>Coffee Shop Name</h1>
+    <h2>Ordering System</h2>
+  </header>
+
+  <section id="drink-section">
+    <h3>Drink Selection</h3>
+    <label for="drink-type">Drink Type:</label>
+    <select id="drink-type">
+      <option value="">Choose drink type...</option>
+      <option value="hot">Hot Coffee</option>
+      <option value="cold">Cold Coffee</option>
+      <option value="blended">Blended Coffee</option>
+      <option value="milk-tea">Milk Tea</option>
+    </select>
+    
+    <label for="size">Size:</label>
+    <select id="size">
+      <option value="S">Small</option>
+      <option value="M">Medium</option>
+      <option value="L">Large</option>
+      <option value="XL">Extra Large</option>
+    </select>
+
+    <label for="whipped-cream">Whipped Cream:</label>
+    <input type="checkbox" id="whipped-cream">
+
+    <label for="milk-type">Milk Type:</label>
+    <select id="milk-type">
+      <option value="regular-milk">Regular Milk</option>
+      <option value="almond-milk">Almond Milk</option>
+    </select>
+
+    <label for="chocolate-sauce-pumps">Chocolate Sauce Pumps:</label>
+    <input type="number" id="chocolate-sauce-pumps" min="0" max="6" step="1" value="0">
+  </section>
+
+  <section id="food-section">
+    <h3>Food Selection</h3>
+    <label for="item-type">Item Type:</label>
+    <select id="item-type">
+      <option value="">Choose food type...</option>
+      <option value="sandwich">Sandwich</option>
+      <option value="bagel">Bagel</option>
+    </select>
+
+    <label for="option1">Option:</label>
+    <select id="option1">
+      <option value="egg">Egg</option>
+      <option value="turkey">Turkey</option>
+      <option value="butter">Butter</option>
+      <option value="cream-cheese">Cream Cheese</option>
+    </select>
+  </section>
+
+  <button id="add-item-btn">Add Item</button>
+
+  <section id="order-list">
+    <h3>Selected Items</h3>
+    <ul id="item-list"></ul>
+  </section>
+
+  <button id="calculate-btn">Calculate Total</button>
+
+  <section id="price-breakdown">
+    <h3>Price Breakdown</h3>
+    <pre id="price-details"></pre>
+  </section>
+
+  <div id="total-price"></div>
+  <div id="tax-amount"></div>
+
+  <button id="language-switch">Switch Language</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
